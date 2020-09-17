@@ -1,0 +1,73 @@
+.cardGroup {
+  columns: 2;
+  color: red;
+  display: flex;
+  justify-content: space-between;
+  width: 20vw;
+}
+.gName {
+  color: green;
+}
+.gSize {
+  color: blue;
+  align-self: center;
+}
+.gNumber {
+  color: blue;
+  display: flex;
+}
+.button {
+  color: blueviolet;
+  border: none;
+  outline: none;
+  font-size: large;
+  background-color: white;
+}
+
+.combos {
+  color: red;
+  justify-content: space-between;
+}
+.combo {
+  color: blue;
+  padding-top: 5%;
+  display: flex;
+  width: 50vw;
+  justify-content: space-between;
+}
+.comboStart {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  width: 15vw;
+}
+.cName {
+  color: green;
+  padding-left: 1vw;
+  align-self: center;
+  text-align: start;
+}
+.cProb {
+  color: green;
+  align-self: center;
+  width: 15vw;
+}
+.delete {
+  height: 1vh+1px;
+  align-self: center;
+  color: red;
+  background-color: white;
+  font-size: x-large;
+  width: 1vh+1px;
+  border: none;
+}
+.checkbox {
+  display: inline-block;
+  text-align: right;
+  justify-content: right;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.checkbox label {
+  float: left;
+}

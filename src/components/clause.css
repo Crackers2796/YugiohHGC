@@ -1,0 +1,52 @@
+.clauses {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.clause {
+  display: flex;
+  padding: 2%;
+  flex-direction: row;
+}
+.clauseButton {
+  padding: 1%;
+  width: 2vw;
+}
+.clauseNum {
+  color: blue;
+}
+
+.clauseType {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  min-width: 8vw;
+  height: 30px + 5vh;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  font-size: 16px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 8vw;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content button {
+  color: black;
+  padding: 5px;
+  display: block;
+  border: none;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-content button:hover {
+  background-color: #ddd;
+}
