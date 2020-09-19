@@ -37,6 +37,8 @@ class Deck extends Component {
     let newText = document.getElementById(type + num).innerText;
     if (type === "gSize") {
       newText = parseInt(newText, 10);
+      if (newText > 99) newText = 99; //should add alerts when capping extreme values
+      if (newText < 0) newText = 0;
     }
     let groupsTemp = this.state.groups.slice();
     const cardGroup = groupsTemp.findIndex((cg) => cg.num === num); //find the group that matches parameter num

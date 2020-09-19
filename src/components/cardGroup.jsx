@@ -3,9 +3,15 @@ class CardGroup extends Component {
   //state = {  }
   adjustSize(amount) {
     let size = document.getElementById("gSize" + this.props.num);
-    size.innerHTML = parseInt(size.innerHTML, 10) + amount;
-    this.props.update("gSize");
+    if (
+      parseInt(size.innerHTML, 10) + amount > -1 &&
+      parseInt(size.innerHTML, 10) + amount < 100
+    ) {
+      size.innerHTML = parseInt(size.innerHTML, 10) + amount;
+      this.props.update("gSize");
+    }
   }
+
   render() {
     const { num, gName, gSize, update } = this.props;
     return (

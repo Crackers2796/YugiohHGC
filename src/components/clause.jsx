@@ -13,6 +13,7 @@ class Clause extends Component {
   render() {
     const { num, type, group, size, groups, update, kill } = this.props;
     const typeText = ["Exactly ", "No ", "At least ", "At most "];
+    console.log(size);
     const groupName = group
       ? groups.find((cg) => cg.num === group).gName
       : "...";

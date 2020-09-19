@@ -43,7 +43,6 @@
 }
 .cName {
   color: green;
-  padding-left: 1vw;
   align-self: center;
   text-align: start;
 }
@@ -60,6 +59,9 @@
   font-size: x-large;
   width: 1vh+1px;
   border: none;
+}
+.cDelete {
+  padding-right: 1vw;
 }
 .checkbox {
   display: inline-block;
